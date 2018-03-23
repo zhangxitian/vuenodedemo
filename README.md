@@ -1,6 +1,6 @@
 # vuenodedemo
 
-> 练习
+> 练习1 , vue路由基础
 
 ## Build Setup
 
