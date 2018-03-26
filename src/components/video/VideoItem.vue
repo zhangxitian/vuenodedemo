@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <img v-lazy="video.coverSrc" />
+  <div class="videolist">
+    <img :src="video.coverSrc" />
     <span>{{ video.title }}</span>
   </div>
 </template>
@@ -11,3 +11,6 @@
 
   }
 </script>
+<style>
+  .videolist img{width: 100px;height: 75px;}
+</style>
