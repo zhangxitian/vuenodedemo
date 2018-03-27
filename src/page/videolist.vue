@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="videolist">
     <VideoItem v-for="video in videos" :video="video"></VideoItem>
   </div>
 </template>
@@ -29,3 +29,12 @@
 
   }
 </script>
+<style>
+  .videolist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 100px;
+    padding-top: 70px
+  }
+</style>

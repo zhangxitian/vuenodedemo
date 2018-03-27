@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <!--<img src="./assets/logo.png">-->
-    <nav>
-      <router-link :to="'/'">hello1</router-link>
-      <router-link :to="'/helloworld2'">hello2</router-link>
-      <router-link :to="'/helloworld3'">hello3</router-link>
-    </nav>
+    <Header />
     <router-view/>
   </div>
 </template>
 
 <script>
+  import Header from './page/header'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Header
+  }
 }
 </script>
 
@@ -23,6 +23,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

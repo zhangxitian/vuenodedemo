@@ -1,7 +1,7 @@
 <template>
-  <div class="videolist">
+  <div class="video">
     <img :src="video.coverSrc" />
-    <span>{{ video.title }}</span>
+    <h4>{{ video.title }}</h4>
   </div>
 </template>
 
@@ -12,5 +12,7 @@
   }
 </script>
 <style>
-  .videolist img{width: 100px;height: 75px;}
+  .video{width:200px; margin-right: 10px;}
+  .video img{width: 200px;height: 150px;}
+  .video h4{margin: 8px 0;}
 </style>
