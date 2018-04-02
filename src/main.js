@@ -7,7 +7,7 @@ import store from './store/store'
 import axios from './axios/axiosService'
 
 Vue.config.productionTip = false
-Vue.prototype.$http = axios
+Vue.prototype.$ajax = axios
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import {getVideos} from "../jdbc/video"
+import {getVideos, getImages} from "../jdbc/video"
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    videos: []
+    videos: [],
+    images: []
   },
 
   mutations: {
@@ -15,6 +16,11 @@ const store = new Vuex.Store({
         let v = getVideos()
         v.then(res => {
           state.videos = res.data.videos
+        })
+    },
+    getImages: state => {
+        getImages().then(res => {
+          state.images = res.data
         })
     }
   }
