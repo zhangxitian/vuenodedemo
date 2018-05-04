@@ -4,6 +4,7 @@ import HelloWorld2 from '../components/HelloWorld2'
 import HelloWorld3 from '../components/HelloWorld3'
 import VideoList from '../page/videolist'
 import Images from '../page/images'
+import FormTest from '../page/formTest'
 
 Vue.use(Router)
 
@@ -25,14 +26,9 @@ export default new Router({
       component: Images
     },
     {
-      path: '/helloworld2',
-      name: 'helloworld2',
-      component: HelloWorld2
-    },
-    {
-      path: '/helloworld3',
-      name: 'HelloWorld3',
-      component: HelloWorld3
+      path: '/formtest',
+      name: 'FormTest',
+      component: FormTest
     }
   ]
 })

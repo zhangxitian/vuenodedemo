@@ -1,6 +1,6 @@
 <template>
   <div class="videolist">
-    <VideoItem v-for="video in videos" :video="video"></VideoItem>
+    <VideoItem v-for="video in videos" :video="video" ></VideoItem>
   </div>
 </template>
 
